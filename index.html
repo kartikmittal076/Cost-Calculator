@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shree Shyaam Tourist Bus Service</h1>
+        <h1>Cost Calculator</h1>
+        <label for="stateSelect">Select State:</label>
+        <select id="stateSelect">
+            <option value="NA">NA - Select State Name (0)</option>
+            <option value="UP">UP - Uttar Pradesh (1400)</option>
+            <option value="UK">UK - Uttarakhand (1435)</option>
+            <option value="HR">HR - Haryana (1000)</option>
+            <option value="PB">PB - Punjab (3350)</option>
+            <option value="RJ">RJ - Rajasthan (8500)</option>
+            <option value="MP">MP - Madhya Pradesh (11000)</option>
+            <option value="AP">AP - Andhra Pradesh (0)</option>
+            <option value="GJ">GJ - Gujarat (0)</option>
+            <option value="MH">MH - Maharashtra (0)</option>
+            <option value="CJ">CJ - Chhattisgarh (0)</option>
+            <option value="HP">HP - Himachal Pradesh (1800)</option>
+        </select>
+        <button id="addStateBtn">Add State</button>
+
+        <h3>Selected States</h3>
+        <ul id="selectedStatesList"></ul>
+
+        <label for="totalKms">Total Kilometers:</label>
+        <input type="number" id="totalKms" placeholder="Enter kilometers">
+
+        <label for="oilCostPerLiter">Oil Cost/Liter:</label>
+        <input type="number" id="oilCostPerLiter" placeholder="Enter oil cost per liter">
+
+        <label for="fuelEfficiency">Fuel Efficiency (km/l):</label>
+        <input type="number" id="fuelEfficiency" placeholder="Enter fuel efficiency">
+
+        <label for="tolls">Tolls:</label>
+        <input type="number" id="tolls" placeholder="Enter tolls">
+
+        <label for="permits">Permits:</label>
+        <input type="number" id="permits" placeholder="Enter permits">
+
+        <label for="numberOfDays">Number of Days of Trip:</label>
+        <input type="number" id="numberOfDays" placeholder="Enter number of days">
+
+        <label for="staffSalary">Staff Salary per Day:</label>
+        <input type="number" id="staffSalary" placeholder="Enter staff salary per day">
+
+        <button id="calculateBtn">Calculate Total Cost</button>
+        <h3 id="result">Total Cost: $0.00</h3>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
